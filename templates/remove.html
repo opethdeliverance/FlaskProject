@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <h3>Remove a recipe</h3>
+    <ul>
+    {% for recipe in recipe_list %}
+        <li>{{ recipe[1] }} - <a href="/delete/{{ recipe[1] }}"> Delete</a></li>
+    {% endfor %}
+    </ul>
+  <a href="{{url_for('main_page')}}">Home</a>
+
+</body>
+</html>

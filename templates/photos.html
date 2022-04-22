@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LIST OF RECIPES</title>
+</head>
+<body>
+    <h1>LIST OF RECIPES</h1>
+    {% for image in recipe_images %}
+        <img src="static/images/{{ image[0] }}"></img>
+        <h2>{{ image[1] }}</h2>
+        <h2>{{ "Ingredient List: " + image[2] }}</h2>
+        <h2>{{ image[3] + " Minutes Prep Time" }}</h2>
+    {% endfor %}
+    <a href="{{url_for('main_page')}}">Home</a>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Steve's Recipes</h1>
+    <h2>Collection of recipes</h2>
+
+    <a href="{{ url_for ('photos')}}">View All Recipes</a>
+    <a href="{{ url_for ('file_upload')}}">Upload Recipe</a>
+    <a href="{{ url_for ('remove_recipe_page')}}">Remove Recipe</a>
+</body>
+</html>
