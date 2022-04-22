@@ -2,17 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/styles/remove.css">
     <title>Title</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+  <a href="{{url_for('main_page')}}">Home</a>
 
-  <h3>Remove a recipe</h3>
+
+  <h1>Remove a recipe</h1>
     <ul>
     {% for recipe in recipe_list %}
         <li>{{ recipe[1] }} - <a href="/delete/{{ recipe[1] }}"> Delete</a></li>
     {% endfor %}
-    </ul>
-  <a href="{{url_for('main_page')}}">Home</a>
+    </ul><br>
 
 </body>
 </html>

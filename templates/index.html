@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="static/styles/main.css">
+    <title>Raiden's Recipe Catalogue</title>
     <style>
         body {
             text-align: center;
@@ -10,11 +11,12 @@
     </style>
 </head>
 <body>
-    <h1>Steve's Recipes</h1>
-    <h2>Collection of recipes</h2>
+    <h1>Raiden's Recipes</h1>
+    <h2></h2>
 
-    <a href="{{ url_for ('photos')}}">View All Recipes</a>
-    <a href="{{ url_for ('file_upload')}}">Upload Recipe</a>
-    <a href="{{ url_for ('remove_recipe_page')}}">Remove Recipe</a>
+    <a href="{{ url_for ('photos')}}">View All Recipes</a><br>
+    <a href="{{ url_for ('file_upload')}}">Upload Recipe</a><br>
+    <a href="{{ url_for ('remove_recipe_page')}}">Remove Recipe</a><br>
+    <img src="static/images/raiden.jpg" alt="raiden">
 </body>
 </html>

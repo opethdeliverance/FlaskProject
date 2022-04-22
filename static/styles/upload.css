@@ -1,0 +1,56 @@
+* {
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+}
+/* body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+    width: 550px;
+    margin: 0 auto;
+    border: 3px solid blue;
+    padding: 15px 25px;
+} */
+h1 { 
+    font-size: 500%;
+    color: blue;
+    font-family:fantasy; 
+}
+h2 {
+    font-size: 120%;
+    padding: .25em 0 .25em 25px;
+    cursor: pointer;
+    
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 175%;
+    font-family: fantasy;
+
+
+}
+a:focus, a:hover { 
+	color: blue; 
+}
+
+ul {
+    padding-left: 45px;
+    max-width: 300px;
+    max-height: 300px;
+
+}
+li {
+    padding-bottom: .25em;
+    max-width: 300px;
+    max-height: 300px;
+    font-size: 175%;
+
+}
+
+
+
+
+}
+

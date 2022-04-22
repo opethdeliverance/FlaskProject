@@ -70,11 +70,11 @@ def delete(recipe):
         reader = csv.reader(file)
         for row in reader:
             recipe_list.append(row)
-    for recipe in recipe_list:
-        if recipe[1] == recipe:
-            recipe_list.remove(recipe)
+    for food in recipe_list:
+        if food[1] == recipe:
+            recipe_list.remove(food)
             with open("recipes.csv", "w", newline="") as file:
                 writer = csv.writer(file)
                 writer.writerows(recipe_list)
-    return render_template("remove.html", recipe_list=recipe_list)
+    return redirect(url_for("main_page"))
 

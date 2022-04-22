@@ -2,16 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+        <link rel="stylesheet" href="static/styles/upload.css">
+
     <title>Upload Recipe</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h2>Upload a Recipe</h2>
+    <h1>Upload a Recipe</h1>
     <form action ="{{ url_for('file_upload') }}" enctype="multipart/form-data" method = "post">
         <input type = "text" name="recipe_name" placeholder="Enter recipe name"><br>
-        <input type = "text" name="ingredients" placeholder="Enter ingredients"><br>
-        <input type = "text" name="prep_time" placeholder="Enter prep time in minutes"><br>
+        <textarea rows = 5 cols = 30 name="ingredients" placeholder="Enter ingredients"></textarea><br>
+        <input type = "text" name="prep_time" placeholder="Enter cook time in minutes"><br>
         <input type = "file" name="recipe_image"><br>
-        <button>Add Recipe</button>
+        <button>Add Recipe</button><br>
         <a href="{{url_for('main_page')}}">Home</a>
     </form>
 </body>
